@@ -11,7 +11,7 @@ Subsequent avenues for investigation include using the Arudio SoftModem to gener
 
 FSK signals out can be converted to low-harmonic sine waves through use of high-Q bandpass filtering or infinite gain multiple feedback filter. 
 
-Clean sine waves can be passed into an audio amplifier such ast the TDA2030A to increase power.
+Clean sine waves can be passed into an audio amplifier such ast the TDA2030A or LM3876 or LM4755 to increase power.
 
 Clean amplified signals can be passed into an impedence matched antenna. This method will have a power inneficiency compared to morse code
 due to the fact that you cannot impendence match for two frequencies simultaneously. However, if this works, it will be trivial to turn 
