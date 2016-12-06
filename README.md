@@ -9,7 +9,7 @@ Subsequent avenues for investigation include using the Arudion SoftModem to gene
 3150/6300hz
 2666/4000hz
 
-FSK signals out can be converted to low-harmonic sine waves through use of high-Q bandpass filtering. 
+FSK signals out can be converted to low-harmonic sine waves through use of high-Q bandpass filtering or infinite gain multiple feedback filter. 
 
 Clean sine waves can be passed into an audio amplifier to increase power.
 
