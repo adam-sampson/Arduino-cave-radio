@@ -1,22 +1,7 @@
 # Arduino-cave-radio
-The goal is to explore the use of an Arduino (and filters/amps) to generate ULF signals for cave radio cheaply and easily. 
+The goal of this project is to create a cave-radio in the ELF and/or VLF frequencies. The Arduino (compatible) board will be used for modern communications such as text transmission and even pairing to a bluetooth phone for ease of use.
 
-Initial avenues for investigation include using the Arudio to generate frequencies in the 1500hz to 4500hz ranges including a simple 
-morse code key.
+# The design premise 
+The radio itself will be built off of existing open-source VLF radio designs. These designs will need to have parts updated to match modern part availability. One option is to use an existing cave radio. Another is to combine two simple circuits such as the [Inspire VLF-3 reciever](http://theinspireproject.org/default.asp?contentID=3) and a modified version of the following [earthmode transmitter](https://sites.google.com/site/sub9khz/earthmode).
 
-Subsequent avenues for investigation include using the Arudio SoftModem to generate FSK signals with signals at: 
-1575/3150hz
-3150/6300hz
-2666/4000hz
-
-FSK signals out can be converted to low-harmonic sine waves through use of high-Q bandpass filtering or infinite gain multiple feedback filter. 
-
-Clean sine waves can be passed into an audio amplifier such ast the TDA2030A or LM3876 or LM4755 or LM384N to increase power.
-
-Clean amplified signals can be passed into an impedence matched antenna. This method will have a power inneficiency compared to morse code
-due to the fact that you cannot impendence match for two frequencies simultaneously. However, if this works, it will be trivial to turn 
-this into a single frequency morse code transmitter. 
-
-Received morse signals will be able to be listened to through a speaker (after amplification). 
-
-Received FSK signals will likely require a Schmitt trigger conversion to square wave prior to input into the Arduino.
+Then, an arduino will be inserted as both a keyer and a receiver. The arduino will need heavy noise detection and compensation which will necessarily reduce throughput speeds. An alternative to using the arduino as a keyer is to use it to modulate the output signal. But this creates problems with increase circuit modification and potential antenna matching complications.
