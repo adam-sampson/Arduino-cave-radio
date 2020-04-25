@@ -6,11 +6,9 @@ This page contains the hardware for building a cave radio
 
 *Incomplete*
 
-# Description
-
 # Flowchart
 
-```mermaid
-graph LR
-  A --> B;
-```
+
+
+# Explanation
+
