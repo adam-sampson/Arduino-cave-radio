@@ -13,3 +13,7 @@ The microcontroller (Arduino) will be inserted as both a keyer and a receiver. T
 A bluetooth module will be connected to the Arduino to allow the radio to communicate with an Android or iOS phone to save on design complexity for text input/receipt. Because a phone will be required the adjustments available in the unit will be limited to the power switch, antenna plug, and some gain control knobs. 
 
 Because this will be controlled by a microcontroller, future designs can add capability for the surface station to communicate over GSM or LTE cellular networks, use GPS enabled ground stations for trilateration, or whatever else the community comes up with.
+
+# Simple Arduino VLF Radio
+
+This is the location for the hardware for a the most simple version of the Arduino cave radio. Schematics are make in the [open source] KiCad software. More details are available there.
