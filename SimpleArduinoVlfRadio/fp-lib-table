@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name MAX292EPA-)(type KiCad)(uri ${KIPRJMOD}/ul_MAX292EPA-/KiCAD/2021-10-12_01-40-01/footprints.pretty)(options "")(descr ""))
+  (lib (name LM1875-NOPB)(type KiCad)(uri ${KIPRJMOD}/ul_LM1875T-NOPB/KiCAD/2021-10-12_02-00-19/footprints.pretty)(options "")(descr ""))
+  (lib (name TLC555CP)(type KiCad)(uri ${KIPRJMOD}/ul_TLC555CP/KiCAD/2021-10-12_02-33-31/footprints.pretty)(options "")(descr ""))
+)
