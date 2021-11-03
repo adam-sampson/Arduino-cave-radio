@@ -14,8 +14,8 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	1100 3100 1450 3100
-Text GLabel 1100 3100 0    50   Input ~ 0
+	1100 3000 1450 3000
+Text GLabel 1100 3000 0    50   Input ~ 0
 DigitalSignal
 Wire Wire Line
 	2650 2000 2450 2000
@@ -28,8 +28,9 @@ S 1450 2800 1000 600
 U 616EB94F
 F0 "Signal Generator" 50
 F1 "Signal Generator.sch" 50
-F2 "digital_in" I L 1450 3100 50 
+F2 "digital_in" I L 1450 3000 50 
 F3 "FmOut" I R 2450 3100 50 
+F4 "Enable555" I L 1450 3200 50 
 $EndSheet
 Text GLabel 2650 2000 2    50   Input ~ 0
 +5V
@@ -62,4 +63,8 @@ F3 "TransSigOut" I R 4050 3100 50
 $EndSheet
 Wire Wire Line
 	2450 3100 3050 3100
+Text GLabel 1100 3200 0    50   Input ~ 0
+555Enable
+Wire Wire Line
+	1100 3200 1450 3200
 $EndSCHEMATC
