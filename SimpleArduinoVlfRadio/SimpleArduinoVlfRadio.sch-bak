@@ -57,5 +57,9 @@ S 3050 2800 1000 600
 U 617F980A
 F0 "Transmit Amplifier" 50
 F1 "Transmit Amplifier.sch" 50
+F2 "FmIn" I L 3050 3100 50 
+F3 "TransSigOut" I R 4050 3100 50 
 $EndSheet
+Wire Wire Line
+	2450 3100 3050 3100
 $EndSCHEMATC

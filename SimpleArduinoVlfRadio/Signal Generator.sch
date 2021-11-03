@@ -235,10 +235,6 @@ F 3 "" H 5900 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 3500 5100 3500
-Wire Wire Line
-	5100 3300 5200 3300
-Wire Wire Line
 	5200 3900 5100 3900
 Wire Wire Line
 	5100 3900 5100 4100
@@ -315,9 +311,6 @@ F 3 "~" H 4700 4300 50  0001 C CNN
 	1    4700 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 3300 5100 3500
-Connection ~ 5100 3300
 Wire Wire Line
 	4700 3300 4700 3350
 $Comp
@@ -464,8 +457,6 @@ F 3 "~" H 9550 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 3300 5100 3300
-Wire Wire Line
 	4900 3300 4700 3300
 Connection ~ 4900 3300
 Wire Wire Line
@@ -558,4 +549,12 @@ Wire Wire Line
 	8650 3500 10350 3500
 Text HLabel 10350 3500 2    50   Input ~ 0
 FmOut
+Wire Wire Line
+	4900 3300 5200 3300
+Text HLabel 5100 2700 2    50   Input ~ 0
+Enable555
+Wire Wire Line
+	5200 3500 5100 3500
+Wire Wire Line
+	5100 3500 5100 2700
 $EndSCHEMATC
