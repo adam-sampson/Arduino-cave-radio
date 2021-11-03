@@ -49,5 +49,5 @@ The reference voltage(s) are fed into the control pin of a 555 timer. This 555 t
 
 Next, the square wave is fed into a low pass switch capacitor filter with a cutoff value of approximately 10% more than the desired center frequency. Reviewing the fourier series of a square wave is the sum of all odd multiples of the sine wave at our center frequency. This mean that if we filter all waves above our center frequency it will turn our square wave into a sine wave. 
 
-!(Signal Generator)[SignalGenerator.png]
+![Signal Generator](SignalGenerator.png)
 
