@@ -53,9 +53,15 @@ Next, the square wave is fed into a low pass switch capacitor filter with a cuto
 
 ## Transmitter Amplification
 
-The final stage in the transmitter is to amplify the sine wave and output it to an antenna. Since this radio is designed to operate near 5Khz we can simply use a low-distortion audio amplifier. For this circuit I am using the common LM1875 audio amplifier. This circuit is designed to operate at up to 2W of output power as adjusted using the potentiometer. 
+The final stage in the transmitter is to amplify the sine wave and output it to an antenna. Since this radio is designed to operate near 5Khz we can simply use a low-distortion audio amplifier. For this circuit I originally planned on using the common LM1875 audio amplifier. This circuit is designed to operate at up to 2W of output power as adjusted using the potentiometer. 
 
 ![Transmit Amplifier](transmit_amplifier.png)
+
+However, this amplifier is a high power unit and with this amp the circuit pulls 250mA when outputting at 200mW average power. This is very inefficient. My batteries are 2000mAH and this will only transmit for approximately 8 hours (estimated). Additionally, I didn't realized the G3MB digital relays I had were triac devices and latch open when running DC power through them. Therefore it is necessary to change the SSRs used.
+
+Therefore it was decided to try using the LM386N-4. Note that the -4 is important as this is the 1W version of the amplifier. The LM386N-4 is a much simplier circuit and does not come with a way to attach a heat sink. 
+
+![Transmit Amplifier V2](transmit_amplifier_v2.png)
 
 ## Transmitter Overview
 
