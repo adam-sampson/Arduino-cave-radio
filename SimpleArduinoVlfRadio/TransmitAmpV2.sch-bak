@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 61DDD0F9
+P 5800 3450
+F 0 "U?" H 6144 3496 50  0000 L CNN
+F 1 "LM386-4" H 6144 3405 50  0000 L CNN
+F 2 "" H 5900 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6000 3650 50  0001 C CNN
+	1    5800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61DDF214
+P 5700 2500
+F 0 "#PWR?" H 5700 2350 50  0001 C CNN
+F 1 "+12V" H 5715 2673 50  0000 C CNN
+F 2 "" H 5700 2500 50  0001 C CNN
+F 3 "" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61DDF91B
+P 5700 4100
+F 0 "#PWR?" H 5700 3850 50  0001 C CNN
+F 1 "GND" H 5705 3927 50  0000 C CNN
+F 2 "" H 5700 4100 50  0001 C CNN
+F 3 "" H 5700 4100 50  0001 C CNN
+	1    5700 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3550 5400 3550
+Wire Wire Line
+	5400 3550 5400 3950
+Wire Wire Line
+	5400 3950 5700 3950
+Wire Wire Line
+	5700 3950 5700 4100
+Wire Wire Line
+	5700 3750 5700 3950
+Connection ~ 5700 3950
+Wire Wire Line
+	6100 3450 6650 3450
+Wire Wire Line
+	5800 3150 5800 3000
+Wire Wire Line
+	5050 3900 5050 3950
+Wire Wire Line
+	5050 3950 5400 3950
+Connection ~ 5400 3950
+$Comp
+L Device:C C?
+U 1 1 61DE66BC
+P 6650 3800
+F 0 "C?" H 6765 3846 50  0000 L CNN
+F 1 "100nF" H 6765 3755 50  0000 L CNN
+F 2 "" H 6688 3650 50  0001 C CNN
+F 3 "~" H 6650 3800 50  0001 C CNN
+	1    6650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3650 6650 3450
+Connection ~ 6650 3450
+Wire Wire Line
+	6650 3450 6950 3450
+Wire Wire Line
+	6650 3950 5700 3950
+$Comp
+L Device:CP1 C?
+U 1 1 61DE1BB3
+P 5050 3750
+F 0 "C?" H 5165 3796 50  0000 L CNN
+F 1 "100uF" H 5165 3705 50  0000 L CNN
+F 2 "" H 5050 3750 50  0001 C CNN
+F 3 "~" H 5050 3750 50  0001 C CNN
+	1    5050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 61DE52DF
+P 7100 3450
+F 0 "C?" V 7352 3450 50  0000 C CNN
+F 1 "250uF" V 7261 3450 50  0000 C CNN
+F 2 "" H 7100 3450 50  0001 C CNN
+F 3 "~" H 7100 3450 50  0001 C CNN
+	1    7100 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3000 5050 3600
+Wire Wire Line
+	5800 3000 5050 3000
+Wire Wire Line
+	7250 3450 7550 3450
+$Comp
+L Device:CP1 C?
+U 1 1 61DE875C
+P 4600 3750
+F 0 "C?" H 4715 3796 50  0000 L CNN
+F 1 "100uF" H 4715 3705 50  0000 L CNN
+F 2 "" H 4600 3750 50  0001 C CNN
+F 3 "~" H 4600 3750 50  0001 C CNN
+	1    4600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3350 5500 3350
+Wire Wire Line
+	5700 2850 4600 2850
+Wire Wire Line
+	4600 2850 4600 3600
+Wire Wire Line
+	5700 2850 5700 3150
+Wire Wire Line
+	4600 3900 4600 3950
+Wire Wire Line
+	4600 3950 5050 3950
+Connection ~ 5050 3950
+$Comp
+L Device:R_POT_US RV?
+U 1 1 61DEA1A6
+P 4150 3350
+F 0 "RV?" H 4082 3396 50  0000 R CNN
+F 1 "10k" H 4082 3305 50  0000 R CNN
+F 2 "" H 4150 3350 50  0001 C CNN
+F 3 "~" H 4150 3350 50  0001 C CNN
+	1    4150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 3500 4150 3950
+Wire Wire Line
+	4150 3950 4600 3950
+Connection ~ 4600 3950
+Wire Wire Line
+	4150 3200 4150 3100
+Wire Wire Line
+	4150 3100 3650 3100
+Text HLabel 3650 3100 0    50   Input ~ 0
+FmIn
+Text HLabel 7550 3450 2    50   Input ~ 0
+TransSigOut
+Text HLabel 3650 2700 0    50   Input ~ 0
+EnableTrans
+Wire Wire Line
+	5700 2500 5700 2850
+Connection ~ 5700 2850
+$EndSCHEMATC

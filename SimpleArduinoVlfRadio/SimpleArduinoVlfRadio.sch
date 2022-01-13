@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "VLF Transmitter"
 Date ""
 Rev ""
@@ -60,6 +60,7 @@ F0 "Transmit Amplifier" 50
 F1 "Transmit Amplifier.sch" 50
 F2 "FmIn" I L 3050 3100 50 
 F3 "TransSigOut" I R 4050 3100 50 
+F4 "EnableTrans" I L 3050 3250 50 
 $EndSheet
 Wire Wire Line
 	2450 3100 3050 3100
@@ -67,4 +68,18 @@ Text GLabel 1100 3200 0    50   Input ~ 0
 555Enable
 Wire Wire Line
 	1100 3200 1450 3200
+Text GLabel 1250 3650 0    50   Input ~ 0
+TranmistterEnable
+Wire Wire Line
+	1250 3650 2750 3650
+Wire Wire Line
+	2750 3650 2750 3250
+Wire Wire Line
+	2750 3250 3050 3250
+$Sheet
+S 4700 2800 1050 600 
+U 61DDCE18
+F0 "Transmit Amplifier V2" 50
+F1 "TransmitAmpV2.sch" 50
+$EndSheet
 $EndSCHEMATC

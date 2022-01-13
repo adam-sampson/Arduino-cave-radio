@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3000 3600 0    50   Input ~ 0
+Text HLabel 2350 3600 0    50   Input ~ 0
 FmIn
 $Comp
 L Device:R_US R?
@@ -49,10 +49,9 @@ F 3 "" H 5450 3600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 3600 3300 3600
+	2350 3600 2650 3600
 Wire Wire Line
 	3300 3950 3300 3600
-Connection ~ 3300 3600
 Wire Wire Line
 	3300 3600 3650 3600
 $Comp
@@ -170,12 +169,7 @@ Connection ~ 4750 2350
 Wire Wire Line
 	4750 2350 4300 2350
 Wire Wire Line
-	6550 2200 7800 2200
-Wire Wire Line
-	7800 2200 7800 3600
-Wire Wire Line
 	7800 3600 7650 3600
-Connection ~ 6550 2200
 $Comp
 L Device:CP1 C?
 U 1 1 618028AF
@@ -213,8 +207,6 @@ Wire Wire Line
 	6600 4900 6600 5100
 Wire Wire Line
 	7650 3800 7800 3800
-Wire Wire Line
-	7800 3800 7800 4900
 Wire Wire Line
 	4300 4900 6600 4900
 Connection ~ 6600 4900
@@ -262,8 +254,6 @@ Connection ~ 5450 4450
 Wire Wire Line
 	6750 4450 8100 4450
 Wire Wire Line
-	8100 4450 8100 3700
-Wire Wire Line
 	6600 4600 6600 4700
 Wire Wire Line
 	6600 4700 6300 4700
@@ -272,11 +262,104 @@ Wire Wire Line
 Connection ~ 6300 4450
 Wire Wire Line
 	6300 4450 5450 4450
-Text HLabel 8800 3700 2    50   Input ~ 0
+Text HLabel 9600 3600 2    50   Input ~ 0
 TransSigOut
 Wire Wire Line
 	7650 3700 8100 3700
-Connection ~ 8100 3700
 Wire Wire Line
-	8100 3700 8800 3700
+	7800 2200 7800 3600
+$Comp
+L G3MB-202P:G3MB202PDC12 K-Bad-can't-dc
+U 1 1 61DB7D68
+P 7950 1900
+F 0 "K-Bad-can't-dc" H 7322 1912 50  0000 R CNN
+F 1 "G3MB202PDC12" H 7322 2003 50  0000 R CNN
+F 2 "RELAY_G3MB202PDC12" H 7950 1900 50  0001 L BNN
+F 3 "" H 7950 1900 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 7950 1900 50  0001 L BNN "STANDARD"
+F 5 "N/A" H 7950 1900 50  0001 L BNN "PARTREV"
+F 6 "Omron" H 7950 1900 50  0001 L BNN "MANUFACTURER"
+	1    7950 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 2200 6550 2200
+Connection ~ 6550 2200
+$Comp
+L G3MB-202P:G3MB202PDC12 K?
+U 1 1 61DBBAC2
+P 9150 4400
+F 0 "K?" V 9171 4172 50  0000 R CNN
+F 1 "G3MB202PDC12" V 9080 4172 50  0000 R CNN
+F 2 "RELAY_G3MB202PDC12" H 9150 4400 50  0001 L BNN
+F 3 "" H 9150 4400 50  0001 L BNN
+F 4 "Manufacturer Recommendation" H 9150 4400 50  0001 L BNN "STANDARD"
+F 5 "N/A" H 9150 4400 50  0001 L BNN "PARTREV"
+F 6 "Omron" H 9150 4400 50  0001 L BNN "MANUFACTURER"
+	1    9150 4400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7800 4900
+Wire Wire Line
+	8850 3950 8750 3950
+Wire Wire Line
+	8450 2200 8450 4900
+Wire Wire Line
+	8450 4900 7800 4900
+Wire Wire Line
+	8450 4900 8850 4900
+Connection ~ 8450 4900
+Text HLabel 9600 2800 2    50   Input ~ 0
+EnableTrans
+Wire Wire Line
+	8300 2200 8300 2800
+Wire Wire Line
+	8300 2800 8600 2800
+Wire Wire Line
+	8850 4750 8600 4750
+Wire Wire Line
+	8600 4750 8600 2800
+Connection ~ 8600 2800
+Wire Wire Line
+	8600 2800 9600 2800
+Wire Wire Line
+	7800 3800 7800 4900
+Wire Wire Line
+	8850 4250 8100 4250
+Wire Wire Line
+	8100 3700 8100 4250
+Connection ~ 8100 4250
+Wire Wire Line
+	8100 4250 8100 4450
+$Comp
+L Device:R_US Rlim
+U 1 1 61DD4E43
+P 9150 3600
+F 0 "Rlim" V 8945 3600 50  0000 C CNN
+F 1 "10ohm 2.5W" V 9036 3600 50  0000 C CNN
+F 2 "" V 9190 3590 50  0001 C CNN
+F 3 "~" H 9150 3600 50  0001 C CNN
+	1    9150 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9600 3600 9300 3600
+Wire Wire Line
+	9000 3600 8750 3600
+Wire Wire Line
+	8750 3600 8750 3950
+Wire Wire Line
+	2950 3600 3300 3600
+Connection ~ 3300 3600
+$Comp
+L Device:R_POT_US RV?
+U 1 1 61DFCDC5
+P 2800 3600
+F 0 "RV?" V 2595 3600 50  0000 C CNN
+F 1 "470K" V 2686 3600 50  0000 C CNN
+F 2 "" H 2800 3600 50  0001 C CNN
+F 3 "~" H 2800 3600 50  0001 C CNN
+	1    2800 3600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

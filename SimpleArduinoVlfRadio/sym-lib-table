@@ -3,4 +3,5 @@
   (lib (name MAX292EPA-)(type Legacy)(uri ${KIPRJMOD}/ul_MAX292EPA-/KiCAD/2021-10-12_01-40-01/2021-10-12_01-40-01.lib)(options "")(descr ""))
   (lib (name LM1875T/NOPB)(type Legacy)(uri ${KIPRJMOD}/ul_LM1875T-NOPB/KiCAD/2021-10-12_02-00-19/2021-10-12_02-00-19.lib)(options "")(descr ""))
   (lib (name 2021-10-12_02-33-31)(type Legacy)(uri ${KIPRJMOD}/ul_TLC555CP/KiCAD/2021-10-12_02-33-31/2021-10-12_02-33-31.lib)(options "")(descr ""))
+  (lib (name G3MB-202P)(type Legacy)(uri C:/Users/samps/Documents/Arduino-cave-radio/SimpleArduinoVlfRadio/G3MB202PDC12/G3MB202PDC12.lib)(options "")(descr ""))
 )
