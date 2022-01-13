@@ -154,8 +154,6 @@ Wire Wire Line
 Connection ~ 4600 3950
 Wire Wire Line
 	4150 3200 4150 3100
-Wire Wire Line
-	4150 3100 3650 3100
 Text HLabel 3650 3100 0    50   Input ~ 0
 FmIn
 Text HLabel 7550 3450 2    50   Input ~ 0
@@ -165,4 +163,19 @@ EnableTrans
 Wire Wire Line
 	5700 2500 5700 2850
 Connection ~ 5700 2850
+$Comp
+L Device:C C?
+U 1 1 61E018D6
+P 3900 3100
+F 0 "C?" V 3648 3100 50  0000 C CNN
+F 1 "100nF" V 3739 3100 50  0000 C CNN
+F 2 "" H 3938 2950 50  0001 C CNN
+F 3 "~" H 3900 3100 50  0001 C CNN
+	1    3900 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3100 4050 3100
+Wire Wire Line
+	3750 3100 3650 3100
 $EndSCHEMATC
