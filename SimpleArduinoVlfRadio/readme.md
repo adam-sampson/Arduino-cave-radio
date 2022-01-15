@@ -63,9 +63,17 @@ Therefore it was decided to try using the LM386N-4. Note that the -4 is importan
 
 ![Transmit Amplifier V2](transmit_amplifier_v2.png)
 
-The new amplifier circuit was connected and hooked up and is pulling 22mA of current at the source when outputting at about 8.0Vp-p across the 20ohm output (approx. 400mW average power).
+The new amplifier circuit was connected and hooked up and is pulling 90mA of current at the source when outputting at about 10Vp-p across the 20ohm antenna output to ground (approx. 625mW average power).
 
-The circuit with the amplifier disconnected pulls 17mA of current or approx 200mW. The new circuit with the amplifier connected is outputting about 625mW average (10Vp-p on a 20ohm load) with a total circuit ciruit draw of 276mW (12V at 23mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this transmitter should be able to transmit approximately 87 hours (3.75 days). 
+The circuit with the amplifier disconnected pulls 17mA of current or approx 200mW. 
+
+The new circuit with the amplifier connected is outputting about 625mW average (10Vp-p on a 20ohm load) with a total circuit ciruit draw of 1.08W (12V at 90mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this transmitter should be able to transmit approximately 22 hours (~0.9 days). 
+
+Turned down to 400mW (8Vp-p on a 20ohm load) output the draw is 0.88W (12V at 74mA) which should last approximately 27 hours (~1.125 days). 
+
+Turned down to 225mW (6Vp-p on a 20ohm load) output the draw is 0.73W (12V at 61mA) which should last approximately 32 hours (~1.33 days). 
+
+NOTE: The transmit amplifier in this design can be turned off! That means we have a much better battery life as long as we aren't transmitting constantly.
 
 Compare this to the original circuit that was outputting 250mW average with a total circuit draw of 3W (12V at 250mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this older design should be able to transmit approximately 8 hours (0.33 days). 
 
