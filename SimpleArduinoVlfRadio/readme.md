@@ -57,11 +57,17 @@ The final stage in the transmitter is to amplify the sine wave and output it to 
 
 ![Transmit Amplifier](transmit_amplifier.png)
 
-However, this amplifier is a high power unit and with this amp the circuit pulls 250mA when outputting at 200mW average power. This is very inefficient. My batteries are 2000mAH and this will only transmit for approximately 8 hours (estimated). Additionally, I didn't realized the G3MB digital relays I had were triac devices and latch open when running DC power through them. Therefore it is necessary to change the SSRs used.
+However, this amplifier is a high power unit and with this amp the circuit pulls 250mA when outputting at about 5.8Vp-p across the 20ohm output (approx. 200mW average power). This is very inefficient. My batteries are 2000mAH and this will only transmit for approximately 8 hours (estimated). Additionally, I didn't realized the G3MB digital relays I had were triac devices and latch open when running DC power through them. Therefore it is necessary to change the SSRs used.
 
 Therefore it was decided to try using the LM386N-4. Note that the -4 is important as this is the 1W version of the amplifier. The LM386N-4 is a much simplier circuit and does not come with a way to attach a heat sink. 
 
 ![Transmit Amplifier V2](transmit_amplifier_v2.png)
+
+The new amplifier circuit was connected and hooked up and is pulling 20mA of current at the source when outputting at about 5.0Vp-p across the 20ohm output (approx. 155mW average power). Unfortunately, this amp begins clipping at around 5Vp-p and can't output any more on the 20ohm load. I will need to research why it is clipping. 
+
+The circuit with the amplifier disconnected pulls 17mA of current or approx 200mW. The new circuit with the amplifier connected is outputting about 155mW average with a total circuit ciruit draw of 240mW (12V at 20mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this transmitter should be able to transmit approximately 100 hours (4 days). 
+
+Compare this to the original circuit that was outputting 250mW average with a total circuit draw of 3W (12V at 250mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this older design should be able to transmit approximately 8 hours (0.33 days). 
 
 ## Transmitter Overview
 
