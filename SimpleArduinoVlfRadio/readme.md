@@ -63,9 +63,9 @@ Therefore it was decided to try using the LM386N-4. Note that the -4 is importan
 
 ![Transmit Amplifier V2](transmit_amplifier_v2.png)
 
-The new amplifier circuit was connected and hooked up and is pulling 20mA of current at the source when outputting at about 5.0Vp-p across the 20ohm output (approx. 155mW average power). Unfortunately, this amp begins clipping at around 5Vp-p and can't output any more on the 20ohm load. I will need to research why it is clipping. 
+The new amplifier circuit was connected and hooked up and is pulling 22mA of current at the source when outputting at about 8.0Vp-p across the 20ohm output (approx. 400mW average power).
 
-The circuit with the amplifier disconnected pulls 17mA of current or approx 200mW. The new circuit with the amplifier connected is outputting about 155mW average with a total circuit ciruit draw of 240mW (12V at 20mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this transmitter should be able to transmit approximately 100 hours (4 days). 
+The circuit with the amplifier disconnected pulls 17mA of current or approx 200mW. The new circuit with the amplifier connected is outputting about 625mW average (10Vp-p on a 20ohm load) with a total circuit ciruit draw of 276mW (12V at 23mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this transmitter should be able to transmit approximately 87 hours (3.75 days). 
 
 Compare this to the original circuit that was outputting 250mW average with a total circuit draw of 3W (12V at 250mA). If I use 4 x 18650 with batteries with 2,000 mAh capacity in series for the power supply, this older design should be able to transmit approximately 8 hours (0.33 days). 
 
