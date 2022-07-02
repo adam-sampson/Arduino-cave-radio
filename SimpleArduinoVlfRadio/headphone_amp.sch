@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 6 14
 Title ""
 Date ""
 Rev ""
@@ -13,4 +13,175 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 3900 3250 0    50   Input ~ 0
+SignalAmpBpIn
+Text HLabel 7750 3500 2    50   Input ~ 0
+AudioOut
+$Comp
+L Amplifier_Audio:LM386 U8
+U 1 1 62ACA2FD
+P 5800 3500
+F 0 "U8" H 6144 3546 50  0000 L CNN
+F 1 "LM386" H 6144 3455 50  0000 L CNN
+F 2 "" H 5900 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6000 3700 50  0001 C CNN
+	1    5800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 62ACBCCF
+P 4800 3400
+F 0 "RV?" H 4733 3446 50  0000 R CNN
+F 1 "R_POT_US" H 4733 3355 50  0000 R CNN
+F 2 "" H 4800 3400 50  0001 C CNN
+F 3 "~" H 4800 3400 50  0001 C CNN
+	1    4800 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3550 4800 4650
+Wire Wire Line
+	4800 4650 5200 4650
+Wire Wire Line
+	5700 4650 5700 3800
+Wire Wire Line
+	5500 3600 5400 3600
+Wire Wire Line
+	5400 3600 5400 4650
+Connection ~ 5400 4650
+Wire Wire Line
+	5400 4650 5700 4650
+Wire Wire Line
+	5500 3400 4950 3400
+Wire Wire Line
+	5700 2500 5700 2650
+$Comp
+L Device:C C?
+U 1 1 62ACE324
+P 6500 3750
+F 0 "C?" H 6615 3796 50  0000 L CNN
+F 1 "0.1uF" H 6615 3705 50  0000 L CNN
+F 2 "" H 6538 3600 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62ACEDC8
+P 6500 4250
+F 0 "R?" H 6568 4296 50  0000 L CNN
+F 1 "10R" H 6568 4205 50  0000 L CNN
+F 2 "" V 6540 4240 50  0001 C CNN
+F 3 "~" H 6500 4250 50  0001 C CNN
+	1    6500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 62ACF574
+P 7000 3500
+F 0 "C?" V 7252 3500 50  0000 C CNN
+F 1 "1000uF" V 7161 3500 50  0000 C CNN
+F 2 "" H 7000 3500 50  0001 C CNN
+F 3 "~" H 7000 3500 50  0001 C CNN
+	1    7000 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 3500 6500 3500
+Wire Wire Line
+	6500 3500 6500 3600
+Wire Wire Line
+	6500 3500 6850 3500
+Connection ~ 6500 3500
+Wire Wire Line
+	7150 3500 7750 3500
+Wire Wire Line
+	6500 3900 6500 4100
+Wire Wire Line
+	6500 4400 6500 4650
+Wire Wire Line
+	6500 4650 5700 4650
+Connection ~ 5700 4650
+$Comp
+L Device:CP1 C?
+U 1 1 62AD043E
+P 6050 4000
+F 0 "C?" V 5798 4000 50  0000 C CNN
+F 1 "CP1" V 5889 4000 50  0000 C CNN
+F 2 "" H 6050 4000 50  0001 C CNN
+F 3 "~" H 6050 4000 50  0001 C CNN
+	1    6050 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 62AD1C74
+P 6050 4350
+F 0 "RV?" V 5845 4350 50  0000 C CNN
+F 1 "R_POT_US" V 5936 4350 50  0000 C CNN
+F 2 "" H 6050 4350 50  0001 C CNN
+F 3 "~" H 6050 4350 50  0001 C CNN
+	1    6050 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 3800 5900 4000
+Wire Wire Line
+	6200 4000 6200 4350
+Wire Wire Line
+	6050 4500 6050 4550
+Wire Wire Line
+	6050 4550 5800 4550
+Wire Wire Line
+	5800 4550 5800 3800
+Wire Wire Line
+	5700 4650 5700 4900
+$Comp
+L power:GND #PWR?
+U 1 1 62AD358A
+P 5700 4900
+F 0 "#PWR?" H 5700 4650 50  0001 C CNN
+F 1 "GND" H 5705 4727 50  0000 C CNN
+F 2 "" H 5700 4900 50  0001 C CNN
+F 3 "" H 5700 4900 50  0001 C CNN
+	1    5700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3250 4800 3250
+$Comp
+L Device:CP1 C?
+U 1 1 62AD4925
+P 5200 2800
+F 0 "C?" H 5315 2846 50  0000 L CNN
+F 1 "100uF" H 5315 2755 50  0000 L CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2650 5700 2650
+Connection ~ 5700 2650
+Wire Wire Line
+	5700 2650 5700 3200
+Wire Wire Line
+	5200 2950 5200 4650
+Connection ~ 5200 4650
+Wire Wire Line
+	5200 4650 5400 4650
+$Comp
+L power:VCC #PWR?
+U 1 1 62C7AF9C
+P 5700 2500
+F 0 "#PWR?" H 5700 2350 50  0001 C CNN
+F 1 "VCC" H 5715 2673 50  0000 C CNN
+F 2 "" H 5700 2500 50  0001 C CNN
+F 3 "" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

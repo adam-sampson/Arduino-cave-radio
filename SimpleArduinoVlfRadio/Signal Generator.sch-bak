@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 2 14
 Title "Signal Generator"
 Date ""
 Rev ""
@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Amplifier_Operational:LM358 U?
-U 1 1 616F9E75
-P 3400 3550
-AR Path="/616F9E75" Ref="U?"  Part="1" 
-AR Path="/616EB94F/616F9E75" Ref="U?"  Part="1" 
-F 0 "U?" H 3400 3183 50  0000 C CNN
-F 1 "LM358" H 3400 3274 50  0000 C CNN
-F 2 "" H 3400 3550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3400 3550 50  0001 C CNN
-	1    3400 3550
-	1    0    0    1   
-$EndComp
 $Comp
 L Device:R_US R?
 U 1 1 616F9E7B
@@ -221,19 +208,6 @@ Wire Wire Line
 	2300 2750 2300 3550
 Text Label 3850 3550 0    50   ~ 0
 freq_sel_v
-$Comp
-L 2021-10-12_02-33-31:TLC555CP U?
-U 1 1 616F9EDC
-P 5900 3700
-AR Path="/616F9EDC" Ref="U?"  Part="1" 
-AR Path="/616EB94F/616F9EDC" Ref="U?"  Part="1" 
-F 0 "U?" H 5900 4488 60  0000 C CNN
-F 1 "TLC555CP" H 5900 4382 60  0000 C CNN
-F 2 "P0008A" H 5900 3640 60  0001 C CNN
-F 3 "" H 5900 3700 60  0000 C CNN
-	1    5900 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5200 3900 5100 3900
 Wire Wire Line
@@ -365,17 +339,6 @@ Wire Wire Line
 Connection ~ 3850 3550
 Text Label 6650 3300 0    50   ~ 0
 square_out
-$Comp
-L SimpleArduinoVlfRadio-rescue:MAX292-Custom_Library U?
-U 1 1 617C60A4
-P 8200 3100
-F 0 "U?" H 8200 3175 50  0000 C CNN
-F 1 "MAX292-Custom_Library" H 8200 3084 50  0000 C CNN
-F 2 "" H 8200 3000 50  0001 C CNN
-F 3 "" H 8200 3000 50  0001 C CNN
-	1    8200 3100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 617CD1E2
@@ -563,4 +526,41 @@ Wire Wire Line
 	7650 3500 7650 3700
 Wire Wire Line
 	7650 3700 7750 3700
+$Comp
+L 2021-10-12_02-33-31:TLC555CP U?
+U 1 1 616F9EDC
+P 5900 3700
+AR Path="/616F9EDC" Ref="U?"  Part="1" 
+AR Path="/616EB94F/616F9EDC" Ref="U2"  Part="1" 
+F 0 "U2" H 5900 4488 60  0000 C CNN
+F 1 "555" H 5900 4382 60  0000 C CNN
+F 2 "" H 5900 3640 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5900 3700 60  0000 C CNN
+	1    5900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SimpleArduinoVlfRadio-rescue:MAX292-Custom_Library U3
+U 1 1 617C60A4
+P 8200 3100
+F 0 "U3" H 8200 3175 50  0000 C CNN
+F 1 "MAX292" H 8200 3084 50  0000 C CNN
+F 2 "" H 8200 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8200 3000 50  0001 C CNN
+	1    8200 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 616F9E75
+P 3400 3550
+AR Path="/616F9E75" Ref="U?"  Part="1" 
+AR Path="/616EB94F/616F9E75" Ref="U1"  Part="1" 
+F 0 "U1" H 3400 3183 50  0000 C CNN
+F 1 "LM358" H 3400 3274 50  0000 C CNN
+F 2 "" H 3400 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3400 3550 50  0001 C CNN
+	1    3400 3550
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

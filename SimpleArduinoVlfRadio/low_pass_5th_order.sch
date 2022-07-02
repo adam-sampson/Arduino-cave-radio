@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 62C64C3D
+P 4000 3250
+F 0 "C?" H 4115 3296 50  0000 L CNN
+F 1 "4.7nF" H 4115 3205 50  0000 L CNN
+F 2 "" H 4038 3100 50  0001 C CNN
+F 3 "~" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62C668A7
+P 3550 3100
+F 0 "R?" V 3345 3100 50  0000 C CNN
+F 1 "4.7k" V 3436 3100 50  0000 C CNN
+F 2 "" V 3590 3090 50  0001 C CNN
+F 3 "~" H 3550 3100 50  0001 C CNN
+	1    3550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62C68D8E
+P 5000 3250
+F 0 "C?" H 5115 3296 50  0000 L CNN
+F 1 "4.7nF" H 5115 3205 50  0000 L CNN
+F 2 "" H 5038 3100 50  0001 C CNN
+F 3 "~" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62C68D94
+P 4550 3100
+F 0 "R?" V 4345 3100 50  0000 C CNN
+F 1 "4.7k" V 4436 3100 50  0000 C CNN
+F 2 "" V 4590 3090 50  0001 C CNN
+F 3 "~" H 4550 3100 50  0001 C CNN
+	1    4550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62C693E8
+P 6000 3250
+F 0 "C?" H 6115 3296 50  0000 L CNN
+F 1 "4.7nF" H 6115 3205 50  0000 L CNN
+F 2 "" H 6038 3100 50  0001 C CNN
+F 3 "~" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62C693EE
+P 5550 3100
+F 0 "R?" V 5345 3100 50  0000 C CNN
+F 1 "4.7k" V 5436 3100 50  0000 C CNN
+F 2 "" V 5590 3090 50  0001 C CNN
+F 3 "~" H 5550 3100 50  0001 C CNN
+	1    5550 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62C69E8E
+P 6950 3250
+F 0 "C?" H 7065 3296 50  0000 L CNN
+F 1 "4.7nF" H 7065 3205 50  0000 L CNN
+F 2 "" H 6988 3100 50  0001 C CNN
+F 3 "~" H 6950 3250 50  0001 C CNN
+	1    6950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62C69E94
+P 6500 3100
+F 0 "R?" V 6295 3100 50  0000 C CNN
+F 1 "4.7k" V 6386 3100 50  0000 C CNN
+F 2 "" V 6540 3090 50  0001 C CNN
+F 3 "~" H 6500 3100 50  0001 C CNN
+	1    6500 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62C6A574
+P 7900 3250
+F 0 "C?" H 8015 3296 50  0000 L CNN
+F 1 "4.7nF" H 8015 3205 50  0000 L CNN
+F 2 "" H 7938 3100 50  0001 C CNN
+F 3 "~" H 7900 3250 50  0001 C CNN
+	1    7900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 62C6A57A
+P 7450 3100
+F 0 "R?" V 7245 3100 50  0000 C CNN
+F 1 "4.7k" V 7336 3100 50  0000 C CNN
+F 2 "" V 7490 3090 50  0001 C CNN
+F 3 "~" H 7450 3100 50  0001 C CNN
+	1    7450 3100
+	0    1    1    0   
+$EndComp
+Text HLabel 2950 3100 0    50   Input ~ 0
+FSKin
+Text HLabel 8450 3100 2    50   Input ~ 0
+FMout
+Wire Wire Line
+	2950 3100 3400 3100
+Wire Wire Line
+	3700 3100 4000 3100
+Wire Wire Line
+	4000 3100 4400 3100
+Connection ~ 4000 3100
+Wire Wire Line
+	4700 3100 5000 3100
+Wire Wire Line
+	5000 3100 5400 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	5700 3100 6000 3100
+Wire Wire Line
+	6000 3100 6350 3100
+Connection ~ 6000 3100
+Wire Wire Line
+	6650 3100 6950 3100
+Wire Wire Line
+	6950 3100 7300 3100
+Connection ~ 6950 3100
+Wire Wire Line
+	7600 3100 7900 3100
+Wire Wire Line
+	7900 3100 8450 3100
+Connection ~ 7900 3100
+$Comp
+L power:GND #PWR?
+U 1 1 62C6C532
+P 6000 3750
+F 0 "#PWR?" H 6000 3500 50  0001 C CNN
+F 1 "GND" H 6005 3577 50  0000 C CNN
+F 2 "" H 6000 3750 50  0001 C CNN
+F 3 "" H 6000 3750 50  0001 C CNN
+	1    6000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3400 6000 3600
+Wire Wire Line
+	4000 3400 4000 3600
+Wire Wire Line
+	4000 3600 5000 3600
+Connection ~ 6000 3600
+Wire Wire Line
+	6000 3600 6000 3750
+Wire Wire Line
+	7900 3400 7900 3600
+Wire Wire Line
+	7900 3600 6950 3600
+Wire Wire Line
+	6950 3450 6950 3600
+Connection ~ 6950 3600
+Wire Wire Line
+	6950 3600 6000 3600
+Wire Wire Line
+	5000 3400 5000 3600
+Connection ~ 5000 3600
+Wire Wire Line
+	5000 3600 6000 3600
+$EndSCHEMATC

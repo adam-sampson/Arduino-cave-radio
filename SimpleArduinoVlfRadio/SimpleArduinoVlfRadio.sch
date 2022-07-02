@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 14
 Title "VLF Transmitter"
 Date ""
 Rev ""
@@ -16,7 +16,7 @@ $EndDescr
 Wire Wire Line
 	1650 3050 2000 3050
 Text GLabel 1650 3050 0    50   Input ~ 0
-DigitalSignal
+DigitalSignalOut
 Wire Wire Line
 	3200 2050 3000 2050
 Wire Wire Line
@@ -34,17 +34,6 @@ F4 "Enable555" I L 2000 3250 50
 $EndSheet
 Text GLabel 3200 2050 2    50   Input ~ 0
 +5V
-$Comp
-L power:+12V #PWR?
-U 1 1 617092F1
-P 1650 1900
-F 0 "#PWR?" H 1650 1750 50  0001 C CNN
-F 1 "+12V" H 1665 2073 50  0000 C CNN
-F 2 "" H 1650 1900 50  0001 C CNN
-F 3 "" H 1650 1900 50  0001 C CNN
-	1    1650 1900
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 2000 1750 1000 600 
 U 616E26A8
@@ -59,14 +48,8 @@ Text GLabel 1650 3250 0    50   Input ~ 0
 555Enable
 Wire Wire Line
 	1650 3250 2000 3250
-Text GLabel 1800 3700 0    50   Input ~ 0
+Text GLabel 1650 3700 0    50   Input ~ 0
 TranmistterEnable
-Wire Wire Line
-	1800 3700 3300 3700
-Wire Wire Line
-	3300 3700 3300 3300
-Wire Wire Line
-	3300 3300 3600 3300
 $Sheet
 S 3600 2850 1050 600 
 U 61DDCE18
@@ -74,43 +57,48 @@ F0 "Transmit Amplifier V2" 50
 F1 "TransmitAmpV2.sch" 50
 F2 "FmIn" I L 3600 3150 50 
 F3 "TransSigOut" I R 4650 3150 50 
-F4 "EnableTrans" I L 3600 3300 50 
 $EndSheet
 $Sheet
 S 2000 4100 1050 550 
 U 61E50876
 F0 "FSK Decoder" 50
 F1 "fsk_decoder.sch" 50
+F2 "SigAmpBpIn" I R 3050 4350 50 
+F3 "DigitalOut" I L 2000 4350 50 
 $EndSheet
 $Sheet
 S 2000 5000 1050 550 
 U 61E508EC
 F0 "Headphone Amp" 50
 F1 "headphone_amp.sch" 50
+F2 "SignalAmpBpIn" I R 3050 5300 50 
+F3 "AudioOut" I L 2000 5300 50 
 $EndSheet
 $Sheet
 S 7800 4100 1050 550 
 U 61E503C9
 F0 "Input Stage" 50
 F1 "input_stage.sch" 50
-$EndSheet
-$Sheet
-S 6450 4100 1000 550 
-U 61E5142A
-F0 "Interstage Filter" 50
-F1 "interstage_filter.sch" 50
+F2 "ReceiverIn" I R 8850 4350 50 
+F3 "SigFirstAmpOut" I L 7800 4500 50 
+F4 "VCC1" I L 7800 4250 50 
 $EndSheet
 $Sheet
 S 5000 4100 1100 550 
 U 61E514ED
 F0 "First Audio Amp" 50
 F1 "first_audio_amp.sch" 50
+F2 "VCC1" I R 6100 4200 50 
+F3 "SigInterstageIn" I R 6100 4350 50 
+F4 "SigAudioAmp1Out" I L 5000 4500 50 
 $EndSheet
 $Sheet
 S 3600 4100 1050 550 
 U 61E504B6
 F0 "Second Amp and Filter" 50
 F1 "second_amp_filter.sch" 50
+F2 "SigAudioAmp1In" I R 4650 4500 50 
+F3 "SigAmpBpFiltered" I L 3600 4350 50 
 $EndSheet
 $Sheet
 S 9350 3300 1150 600 
@@ -118,4 +106,87 @@ U 61E52474
 F0 "Antenna" 50
 F1 "Antenna.sch" 50
 $EndSheet
+$Sheet
+S 6450 4100 1000 550 
+U 61E5142A
+F0 "Interstage Filter" 50
+F1 "interstage_filter.sch" 50
+F2 "SigFirstAmpIn" I R 7450 4500 50 
+F3 "SigInterstageOut" I L 6450 4350 50 
+$EndSheet
+Wire Wire Line
+	7800 4250 7600 4250
+Wire Wire Line
+	7600 4250 7600 3850
+Wire Wire Line
+	7600 3850 6250 3850
+Wire Wire Line
+	6250 3850 6250 4200
+Wire Wire Line
+	6250 4200 6100 4200
+Wire Wire Line
+	7450 4500 7800 4500
+Wire Wire Line
+	6450 4350 6100 4350
+Text GLabel 1700 4350 0    50   Input ~ 0
+DigitalSignalIn
+Wire Wire Line
+	2000 4350 1700 4350
+Text GLabel 1650 3900 0    50   Input ~ 0
+ReceiverEnable
+Text GLabel 1700 5300 0    50   Input ~ 0
+AudioSignalIn
+Wire Wire Line
+	2000 5300 1700 5300
+Wire Wire Line
+	3600 4350 3350 4350
+Wire Wire Line
+	3350 4350 3350 5300
+Wire Wire Line
+	3350 5300 3050 5300
+Connection ~ 3350 4350
+Wire Wire Line
+	3350 4350 3050 4350
+$Sheet
+S 4750 1750 1050 600 
+U 62C385F2
+F0 "Signal Generator v2" 50
+F1 "SignalGeneratorV2.sch" 50
+F2 "FSKout" I R 5800 2050 50 
+F3 "BinaryIn5V" I L 4750 1950 50 
+F4 "Enable555" I L 4750 2150 50 
+$EndSheet
+$Sheet
+S 6300 1750 1000 600 
+U 62C578A0
+F0 "Low Pass 5th Order" 50
+F1 "low_pass_5th_order.sch" 50
+F2 "FSKin" I L 6300 2050 50 
+F3 "FMout" I R 7300 2050 50 
+$EndSheet
+$Sheet
+S 7750 1750 1050 600 
+U 62C5F7EE
+F0 "Transmit Amplifier V3" 50
+F1 "TransmitAmplifierV3.sch" 50
+F2 "FmIn" I L 7750 2050 50 
+F3 "TransSigOut" I R 8800 2050 50 
+$EndSheet
+Wire Wire Line
+	5000 4500 4650 4500
+Wire Wire Line
+	5800 2050 6300 2050
+Wire Wire Line
+	7300 2050 7750 2050
+$Comp
+L power:VCC #PWR?
+U 1 1 62C7D911
+P 1650 1900
+F 0 "#PWR?" H 1650 1750 50  0001 C CNN
+F 1 "VCC" H 1665 2073 50  0000 C CNN
+F 2 "" H 1650 1900 50  0001 C CNN
+F 3 "" H 1650 1900 50  0001 C CNN
+	1    1650 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

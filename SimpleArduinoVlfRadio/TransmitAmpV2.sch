@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 10
+Sheet 4 14
 Title ""
 Date ""
 Rev ""
@@ -14,31 +14,11 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Audio:LM386 U?
-U 1 1 61DDD0F9
-P 5800 3450
-F 0 "U?" H 6144 3496 50  0000 L CNN
-F 1 "LM386-4" H 6144 3405 50  0000 L CNN
-F 2 "" H 5900 3550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6000 3650 50  0001 C CNN
-	1    5800 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 61DDF214
-P 5700 2500
-F 0 "#PWR?" H 5700 2350 50  0001 C CNN
-F 1 "+12V" H 5715 2673 50  0000 C CNN
-F 2 "" H 5700 2500 50  0001 C CNN
-F 3 "" H 5700 2500 50  0001 C CNN
-	1    5700 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 61DDF91B
 P 5700 4100
+AR Path="/61DDCE18/61DDF91B" Ref="#PWR?"  Part="1" 
+AR Path="/62C5E0F5/61DDF91B" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 5700 3850 50  0001 C CNN
 F 1 "GND" H 5705 3927 50  0000 C CNN
 F 2 "" H 5700 4100 50  0001 C CNN
@@ -70,6 +50,8 @@ $Comp
 L Device:C C?
 U 1 1 61DE66BC
 P 6650 3800
+AR Path="/61DDCE18/61DE66BC" Ref="C?"  Part="1" 
+AR Path="/62C5E0F5/61DE66BC" Ref="C?"  Part="1" 
 F 0 "C?" H 6765 3846 50  0000 L CNN
 F 1 "100nF (100V+ Metalized)" H 6765 3755 50  0000 L CNN
 F 2 "" H 6688 3650 50  0001 C CNN
@@ -88,6 +70,8 @@ $Comp
 L Device:CP1 C?
 U 1 1 61DE1BB3
 P 5050 3750
+AR Path="/61DDCE18/61DE1BB3" Ref="C?"  Part="1" 
+AR Path="/62C5E0F5/61DE1BB3" Ref="C?"  Part="1" 
 F 0 "C?" H 5165 3796 50  0000 L CNN
 F 1 "100uF" H 5165 3705 50  0000 L CNN
 F 2 "" H 5050 3750 50  0001 C CNN
@@ -99,6 +83,8 @@ $Comp
 L Device:CP1 C?
 U 1 1 61DE52DF
 P 7100 3450
+AR Path="/61DDCE18/61DE52DF" Ref="C?"  Part="1" 
+AR Path="/62C5E0F5/61DE52DF" Ref="C?"  Part="1" 
 F 0 "C?" V 7352 3450 50  0000 C CNN
 F 1 "250uF (50V+)" V 7261 3450 50  0000 C CNN
 F 2 "" H 7100 3450 50  0001 C CNN
@@ -116,6 +102,8 @@ $Comp
 L Device:CP1 C?
 U 1 1 61DE875C
 P 4600 3750
+AR Path="/61DDCE18/61DE875C" Ref="C?"  Part="1" 
+AR Path="/62C5E0F5/61DE875C" Ref="C?"  Part="1" 
 F 0 "C?" H 4715 3796 50  0000 L CNN
 F 1 "470uF" H 4715 3705 50  0000 L CNN
 F 2 "" H 4600 3750 50  0001 C CNN
@@ -140,6 +128,8 @@ $Comp
 L Device:R_POT_US RV?
 U 1 1 61DEA1A6
 P 4150 3350
+AR Path="/61DDCE18/61DEA1A6" Ref="RV?"  Part="1" 
+AR Path="/62C5E0F5/61DEA1A6" Ref="RV?"  Part="1" 
 F 0 "RV?" H 4082 3396 50  0000 R CNN
 F 1 "20k" H 4082 3305 50  0000 R CNN
 F 2 "" H 4150 3350 50  0001 C CNN
@@ -156,8 +146,6 @@ Text HLabel 3000 3100 0    50   Input ~ 0
 FmIn
 Text HLabel 7550 3450 2    50   Input ~ 0
 TransSigOut
-Text HLabel 3000 2700 0    50   Input ~ 0
-EnableTrans
 Wire Wire Line
 	5700 2500 5700 2850
 Connection ~ 5700 2850
@@ -165,6 +153,8 @@ $Comp
 L Device:C C?
 U 1 1 61E018D6
 P 3250 3100
+AR Path="/61DDCE18/61E018D6" Ref="C?"  Part="1" 
+AR Path="/62C5E0F5/61E018D6" Ref="C?"  Part="1" 
 F 0 "C?" V 2998 3100 50  0000 C CNN
 F 1 "100nF" V 3089 3100 50  0000 C CNN
 F 2 "" H 3288 2950 50  0001 C CNN
@@ -178,6 +168,8 @@ $Comp
 L Device:R_US R?
 U 1 1 61E4A5DB
 P 3750 3100
+AR Path="/61DDCE18/61E4A5DB" Ref="R?"  Part="1" 
+AR Path="/62C5E0F5/61E4A5DB" Ref="R?"  Part="1" 
 F 0 "R?" V 3545 3100 50  0000 C CNN
 F 1 "100k" V 3636 3100 50  0000 C CNN
 F 2 "" V 3790 3090 50  0001 C CNN
@@ -191,4 +183,26 @@ Wire Wire Line
 	3900 3100 4150 3100
 Wire Wire Line
 	4150 3100 4150 3200
+$Comp
+L Amplifier_Audio:LM386 U?
+U 1 1 61DDD0F9
+P 5800 3450
+F 0 "U?" H 6144 3496 50  0000 L CNN
+F 1 "LM386-4" H 6144 3405 50  0000 L CNN
+F 2 "" H 5900 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6000 3650 50  0001 C CNN
+	1    5800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 62C7F6CA
+P 5700 2500
+F 0 "#PWR?" H 5700 2350 50  0001 C CNN
+F 1 "VCC" H 5715 2673 50  0000 C CNN
+F 2 "" H 5700 2500 50  0001 C CNN
+F 3 "" H 5700 2500 50  0001 C CNN
+	1    5700 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
