@@ -14,19 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+12V #PWR?
-U 1 1 61DDF214
-P 5700 2500
-AR Path="/61DDCE18/61DDF214" Ref="#PWR?"  Part="1" 
-AR Path="/62C5E0F5/61DDF214" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5700 2350 50  0001 C CNN
-F 1 "+12V" H 5715 2673 50  0000 C CNN
-F 2 "" H 5700 2500 50  0001 C CNN
-F 3 "" H 5700 2500 50  0001 C CNN
-	1    5700 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 61DDF91B
 P 5700 4100
@@ -205,6 +192,17 @@ F 1 "LM386-4" H 6144 3405 50  0000 L CNN
 F 2 "" H 5900 3550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6000 3650 50  0001 C CNN
 	1    5800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 62C7F6CA
+P 5700 2500
+F 0 "#PWR?" H 5700 2350 50  0001 C CNN
+F 1 "VCC" H 5715 2673 50  0000 C CNN
+F 2 "" H 5700 2500 50  0001 C CNN
+F 3 "" H 5700 2500 50  0001 C CNN
+	1    5700 2500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
