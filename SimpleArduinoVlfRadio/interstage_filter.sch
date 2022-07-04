@@ -60,4 +60,24 @@ Wire Wire Line
 Wire Wire Line
 	6550 3500 7250 3500
 Connection ~ 6550 3500
+$Comp
+L power:GND #PWR?
+U 1 1 62C34CEC
+P 5900 4050
+F 0 "#PWR?" H 5900 3800 50  0001 C CNN
+F 1 "GND" H 5905 3877 50  0000 C CNN
+F 2 "" H 5900 4050 50  0001 C CNN
+F 3 "" H 5900 4050 50  0001 C CNN
+	1    5900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3800 6550 4050
+Wire Wire Line
+	6550 4050 5900 4050
+Wire Wire Line
+	5150 3800 5150 4050
+Wire Wire Line
+	5150 4050 5900 4050
+Connection ~ 5900 4050
 $EndSCHEMATC
